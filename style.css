@@ -666,4 +666,82 @@ html {
   transform: scale(1.02); /* subtle hover zoom */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional shadow */
 }
+/* Certifications Section */
+.certifications {
+    padding: 10rem 12% 10rem;
+    background-color: #000000; /* Set background to black */
+}
+
+.certification-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15rem;
+    margin-bottom: 5rem;
+}
+
+.certification-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #eaad28; /* Golden shade for the content box */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.certification-content:hover {
+    background-color: #eaad28; /* Keep golden shade on hover */
+    box-shadow: 0 0 20px 5px rgba(234, 173, 40, 1); /* Neon glow effect behind the box */
+    transform: scale(1.05); /* Slightly scale up for a hover effect */
+}
+
+.certification-img img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.certification-text {
+    width: 50%;
+    padding: 2rem;
+}
+
+.certification-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.certification-text p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Reverse the layout for the second certification box */
+.certification-box.reverse .certification-content {
+    flex-direction: row-reverse;
+}
+
+@media(max-width: 991px) {
+    .certification-box {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .certification-content {
+        flex-direction: column;
+    }
+
+    .certification-img img {
+        width: 80%;
+    }
+
+    .certification-text {
+        width: 80%;
+    }
+}
 
