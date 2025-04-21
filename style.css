@@ -744,4 +744,61 @@ html {
         width: 80%;
     }
 }
+.tech-stack {
+  background-color: #0d0d0d;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 40px;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tech-box {
+  background-color: #111;
+  border-radius: 15px;
+  padding: 25px;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 transparent;
+}
+
+.tech-box:hover {
+  box-shadow: 0 0 15px #FFD700, 0 0 30px #FFD70033;
+}
+
+.tech-box h3 {
+  color: #00FFCC;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.tech-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-box li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+.tech-box img {
+  width: 24px;
+  height: 24px;
+}
 
