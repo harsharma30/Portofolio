@@ -655,4 +655,15 @@ html {
                 0 0 50px rgba(255, 235, 205, 0.7), 
                 0 0 100px rgba(255, 235, 205, 0.7); /* Cream color box-shadow on hover */
   }
-  
+  .service-info {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* or flex, grid, etc. depending on your layout */
+  transition: transform 0.2s ease;
+}
+
+.service-info:hover {
+  transform: scale(1.02); /* subtle hover zoom */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional shadow */
+}
+
